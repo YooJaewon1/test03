@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>현대판 보부상 육성 사업</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif; font-family: 'Noto Serif KR', serif;}
+		@font-face {
+    	font-family: 'HSBombaram3_Regular';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+}
+	html{}
+		body, h1, h2, h3, img, p{margin:0 auto; letter-spacing: -0.06rem}
+		header, section, footer{margin:0;}
+		h1{font-family: 'HSBombaram3_Regular'; font-weight: 100;
+			line-height: 1.1}
+		p{font-family: 'Noto Serif KR'; font-weight: 300}
+		h2{font-family: 'Noto Serif KR'; font-weight: 700}
+		h3{font-family: 'Noto Serif KR'; font-weight: 400;
+			line-height: 1.8;}
+
+		img{max-width: 100%}
+
+@media (max-width: 768px) {
+     section, h1, h2, h3, h4, h5, p {word-break: keep-all; }
+      p {font-size: 14px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+ @media screen and (max-width: 480px) {
+  section, div {
+    width: 100%;
+  }
+}
+
+	/* 메뉴 */
+	.header {display:flex;
+			flex-direction: column;
+			align-items: center;
+			background: #f2f2f2; 		}
+	.logo img{margin-top: 50px;
+			max-width: 80px;
+			display: flex; justify-content: center	}
+	.menu { text-align: center;
+			color: navy;
+			justify-content: center;
+			height: 110px;
+			width: 100%; 			}
+	.menu ul {display: inline-block;
+  			list-style: none;
+  			padding: 0;
+  			margin: 30px; 			}
+	.menu li {
+			display: inline-block;
+			margin: 0 10px; 			}
+	.menu li a {
+			display: inline-block;
+			padding: 15px;
+			text-decoration: none;
+			color: navy;
+			font-size: 1rem;
+			font-weight: bold ; 		}		
+	.menu li a:hover {color: gold;}
+
+	.background01{
+		width: 100%;
+		height: 85vh;
+		background-image: url("./img/back01.png");
+		background-size: 100%;
+		background-position: center;
+		color: white;
+		padding: 0;
+		text-align: center;
+		align-items: center; 	}
+	.background01 h1{font-family: 'HSBombaram3_Regular';
+					font-weight: 100;
+					font-size: 6rem;
+					position: relative; top:25vh;}
+	.background01 p{font-size: 2rem;
+					position: relative; top: 35vh}
+
+	section {background: #f2f2f2}
+	
+	div .header, .유형1, .유형2, .글2, .hand {width:100%; max-width: 1100px; margin:0 auto}
+	.글1 {height: 79vh;
+		background: #f2f2f2;
+		background-size: 100%;}
+	.글1 h2{font-size: 2.8rem;
+			position: relative; top:33vh;
+			text-align: center;}
+
+	.유형1 {height: 120vh;
+			padding-lef: 15vw; background: white; position: relative;}
+	.유형1 img {width: 100%; max-width: 70%; height: auto;
+				position: absolute; left: 75.5vh ; top: 15vh; right: 0;
+				} 
+	.유형1-글 h1{font-size: 6rem; 
+					position: relative; top: 18vh}
+	.유형1-글 p {font-size: 1.4rem;
+					position: relative; top: 19vh}
+	.유형1-글 h2{font-size: 2.3rem;
+					position: relative; top: 28vh}
+	.유형1-글 h3{font-size: 1.5rem;
+					position: relative; top: 41vh}
+
+	.유형2 {height: 120vh;
+			padding-righ: 15vw; background: #f2f2f2;
+			position: relative;}
+	.유형2 img {max-width: 80%; height: auto;
+				position: absolute; ; top: 0vh; left: -17vw;
+				animation: slide-in 2s running forwards alternate infinite cubic-bezier(.83,.08,.95,.74);} 
+		.유형2 img:hover {animation-play-state: paused;}
+
+		@keyframes slide-in {
+  		0% {
+   		transform: translateX(-100%);
+ 		 }
+ 		100% {
+  		transform: translateX(0);
+  		}
+		}
+
+
+	.글2back {width: 100%; box-sizing: border-box; background: rgb(255,255,255);
+		background: linear-gradient(0deg, rgba(255,255,255,0.6139705882352942) 0%, rgba(188,206,221,1) 38%, rgba(255,255,255,1) 100%);}
+	.글2 {height: 170vh;
+		}
+	.글2 h3{font-size: 2rem;
+			position: relative; top:vh;
+			text-align: center;}
+	.글2 h4{font-size: 1.7rem;
+			position: relative; top:30vh;
+			text-align: center;}
+	.title {width: 100%; height: 130vh;}
+	.title h1{
+		font-size: 7rem;
+			text-align: center;position: relative; top:5vh;}
+	.title h2{font-size: 2.3rem;
+			position: relative; top:23vh;
+			text-align: center;}
+	.title img{width: 160px; top: 40vh;}
+	.title h3{font-size: 1.5rem;
+			position: relative; top:40vh;
+			text-align: center;}
+
+	.box3 {display:flex; flex-wrap: wrap; justify-content: center; position: relative; top: -5vh;}
+	.box {background-color: white;
+		border-radius: 30px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+		padding:10px;
+		margin-right: 40px; 
+		width:230px; height: 52.5vh;
+		text-align: center;
+		transition: transform 0.5s ease-in-out;}
+	.box:hover {transform: scale(1.1);}
+
+	.box h1,h5,p{margin:0}
+	.box h1{font-size: 1.6rem;margin-top: 4vh; font-weight:}
+	.box h5{font-size: 0.7rem; margin-top: 4vh; font-weight:200}
+	.box p{font-size: 0.8rem; margin-top: 4vh; font-weight:400}
+	.box img {width: 150px; margin-top: 2.5vh;}
+
+	@media (max-width: 480px) {
+  		.container {
+   		 flex-direction: column;
+   		 align-items: center;
+  		}
+  
+  		.box {
+    		width: 100%;
+  			margin-top: vh
+  			}
+  		.box h4, h5 {display: none;
+			}
+  		}
+
+	.hand {width: 1100px; margin-top: 30vh; position: relative;}
+	.hand h3 {font-size: 1.5rem; margin-lef: 15vw;}
+	.hand h2 {font-size: 2.5rem; text-align: center; margin-top: 5vh;}
+	.hand h1 {font-size: 5rem; margin-righ: 15vw; text-align: right}
+	.hand img {position: absolute; top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%); width: 75%}
+
+:root {
+	--bg-gray: # }
+
+
+	</style>
+</head>
+<body>
+<section class ="">
+<div class = "header">
+	<div class="logo"> 
+		<img src = "./img/logo.png"> </div>
+	<div class="menu">
+	<ul>
+		<li><a href="link">보부상이란?</a></li>
+		<li><a href="link">보따리 싸기</a></li>
+		<li><a href="link">선배의 조언</a></li>
+	</ul>
+	</div>
+</div>
+</section>
+
+<div class = "background01"> 
+	<h1> 현대판 보부상? </h1>
+	<p> 큰 가방에 물건을 바리바리<br>들고 다니는 사람을 뜻한다. </p>
+</div>
+
+<section class="back1">
+<div class ="글1">
+	<h2>세상에는 다양한 보부상이 존재합니다. <br> <br> 가령,</h2>
+</div>
+</section>
+
+<div class = "유형1">
+	<img src ="./img/1mask.PNG">
+	<div class = "유형1-글">
+	<h1> 마스크 장사꾼형 </h1>
+	<p> 뭐라고? 마스크가 바람에 날아가버렸다고? <br>기다려봐.</p>
+	<h2> 자, 골라. <br> 새부리, 덴탈, 입체형. <br> 셋 중에 뭘로 줄까? </h2>
+	<h3> 마스크 장사꾼형 보부상은 <br> 사용자의 취향에 따라 고를 수 있도록 <br> 선택권을 제공합니다.</h3>
+	</div>
+</div>
+
+<section class = "back1">
+<div class = "유형2">
+	<img src ="./img/2car.PNG">
+	<div class ="유형1-글" style = "text-align: right;">
+	<h1> 에어백형 </h1>
+	<p> 어이 거기 학생!!! 차 조심!!!!</p>
+	<h2> 이 가방이면 <br> 접촉사고에도 <br> 끄떡없지 </h2>
+	<h3> 고도로 발달한 <br> 일부 에어백형 보부상들을 <br> 여분 목숨도 챙겨 다닙니다. </h3>
+	</div>
+</div>
+</section>
+
+<div class = "유형1">
+	<img src ="./img/3bari.PNG">
+	<div class = "유형1-글">
+	<h1> 바리바리형 </h1>
+	<p> 뭐 필요한 거 있어? 꺼내줄게.</p>
+	<h2> 배 아파? 약 줄까? <br> 양말 젖었어? 이거 신을래?<br> 시계가 멈췄어? AA 2개 맞아?</h2>
+	<h3> 바리바리형 보부상들은 <br> 다른 사람에게 도움을 준 행복한 기억 덕분에 <br> 바리바리 유형에서 벗어나지 못합니다.</h3>
+	</div>
+</div>
+
+<div class = "글2back">
+<div class ="글2">
+	<h3> <br><br>. <br> . <br> . <br><br><br> 이외에도 무수히 많은 유형의 <br> 보부상들이 현재 활동 중입니다.<br><br><br><br> 우리 '현부상'에서는 <br>더 많은 보부상 육성을 위해 노력하고 있습니다. </h3>
+
+	<h4> 보부상의 <br> 보부상에 의한 <br> 보부상을 위한 </h4>
+
+</div>
+</div>
+
+<div class = "title">
+	<h1> 현대판 <br> 보부상 육성 사업 </h1>
+	<img src = "./img/bag.PNG" style ="position: relative; left: 20vw;">
+	<img src = "./img/bag.PNG" style = "position: relative; left: 57vw;">
+	<h2> 예비 보부상 여러분을 위한 <br> 상황별 보따리를 준비했습니다. </h2>
+	<h3> 자신에게 맞는 상황을 선택해주세요 </h3>
+</div>
+
+<div class ="box3">
+	<div class="box">
+		<h5> 중학교 ∙ 고등학교</h5>
+		<h1> 체육시간 끝</h1>
+		<p> 더운 여름 야외 수업을 마치고 <br> 교실로 돌아온 학생들을 위한 보따리</p>
+		<img src ="./img/ball.PNG">
+	</div>
+	<div class="box">
+		<h5> 보행자</h5>
+		<h1> 유사 파티 플래너</h1>
+		<p> 길을 걷다 마주칠 다양한 이벤트를 <br>대비하기 위한 보따리</p>
+		<img src ="./img/dog.PNG">
+	</div>
+	<div class="box">
+		<h5> 한국인</h5>
+		<h1> 생활력 만렙</h1>
+		<p> 요동치는 한국에서 <br> 견디기 위한 생존 보따리 </p>
+		<img src ="./img/ring.PNG" style="width: 190px; position: relative; top: -1.5vh;">
+	</div>
+</div>
+<div style ="text-align: center; margin-top:5vh; opacity: 33%;">
+	<p> 더 다양한 상황의 보부상들을 위한 여러 보따리를 연구하고 있습니다.</p>
+</div>
+
+<div class ="hand">
+	<img src = "./img/hand.PNG">
+	<h3> 더운 여름, <br> 체육시간이 끝나고 <br> 교실로 돌아오면 </h3>
+	<h2> 찾게 되는 <br> 그 물건들 </h2>
+	<h1> 여기 <br> 모았습니다 </h1>
+	
+</div>
+
+
+</body>
+</html>
